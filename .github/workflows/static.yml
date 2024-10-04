@@ -35,6 +35,9 @@ jobs:
         with:
           python-version: '3.9'
  
+      - name: install python packages
+        run: pip install -r requirements.txt
+
       - name: execute python script
         run: python3 updater/update.py
       
