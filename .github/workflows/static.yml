@@ -4,7 +4,7 @@ on:
   schedule:
     - cron: '0 */2 * * *' # every 2 hours
 
-  workflow_dispatch: # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch: # Allows you to run this workflow manuellement from the Actions tab
 
 permissions:
   contents: write
@@ -36,10 +36,11 @@ jobs:
         working-directory: updater/ # Execute script from the 'updater/' directory
         run: python3 update.py update
       
-      # Correct action to upload the modified site as a Pages artifact
+      # Upload the modified site as an artifact
       - name: Upload modified site artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-artifact@v3
         with:
+          name: site-artifact
           path: './site/'
 
   deploy:
@@ -55,9 +56,11 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      # Correct action to download the Pages artifact
+      # Download the artifact (modified index.html)
       - name: Download artifact
-        uses: actions/download-pages-artifact@v1
+        uses: actions/download-artifact@v3
+        with:
+          name: site-artifact
 
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
