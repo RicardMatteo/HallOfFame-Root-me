@@ -40,7 +40,7 @@ jobs:
       - name: Upload modified site artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          name: site-artifact
+          name: github-pages
           path: './site/'
 
   deploy:
@@ -60,7 +60,7 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@v3
         with:
-          name: site-artifact
+          name: github-pages
           path: './site/'
 
       # Deploy to GitHub Pages
