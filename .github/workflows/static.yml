@@ -57,7 +57,10 @@ jobs:
 
       # Download artifact (modified index.html)
       - name: Download artifact
-        uses: actions/download-pages-artifact@v1
+        uses: actions/download-artifact@v3
+        with:
+          name: site-artifact
+          path: './site/'
 
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
