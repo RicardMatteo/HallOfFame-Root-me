@@ -36,11 +36,10 @@ jobs:
         working-directory: updater/ # Execute script from the 'updater/' directory
         run: python3 update.py update
       
-      # Upload artifact (./site/index.html) after it is modified by the script
+      # Correct action to upload the modified site as a Pages artifact
       - name: Upload modified site artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-pages-artifact@v4
         with:
-          name: github-pages
           path: './site/'
 
   deploy:
@@ -56,9 +55,9 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      # Download artifact (modified index.html)
+      # Correct action to download the Pages artifact
       - name: Download artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-pages-artifact@v1
 
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
