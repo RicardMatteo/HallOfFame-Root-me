@@ -38,7 +38,7 @@ jobs:
       
       # Correct action to upload the modified site as a Pages artifact
       - name: Upload modified site artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v1
         with:
           path: './site/'
 
