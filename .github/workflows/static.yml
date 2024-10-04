@@ -41,7 +41,7 @@ jobs:
         run: cd updater/
         
       - name: execute python script
-        run: python3 updater/update.py
+        run: python3 updater/update.py update
       
       - name: commit files
         run: |

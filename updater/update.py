@@ -5,7 +5,7 @@ import re
 import requests
 import sys
 
-with open('../site/users.json', 'r') as data_file:
+with open('./site/users.json', 'r') as data_file:
 	data = json.load(data_file)
 
 def wrong_arg():
