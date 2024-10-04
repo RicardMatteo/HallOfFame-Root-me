@@ -1,1 +1,273 @@
-{"users": [{"username": "nin7o-863599", "username_r": "nin7o", "realn": "nin7o", "avatar": "https://www.root-me.org/IMG/logo/auton863599.jpg?1725275720", "rank": "3664", "points": "2635", "challenges": "144", "status": "insider", "details": [{"color": "#dbff6b", "total": "33", "points": "360", "flag": "18", "name": "App-Script"}, {"color": "#6166ff", "total": "93", "points": "5", "flag": "1", "name": "App-System"}, {"color": "#ff4141", "total": "66", "points": "80", "flag": "7", "name": "Cracking"}, {"color": "#b06cfb", "total": "69", "points": "290", "flag": "22", "name": "Cryptanalysis"}, {"color": "#35de59", "total": "42", "points": "305", "flag": "11", "name": "Forensic"}, {"color": "#6db8e4", "total": "29", "points": "190", "flag": "10", "name": "Progamming"}, {"color": "#ff5887", "total": "59", "points": "0", "flag": "0", "name": "Realist"}, {"color": "#e1e0ff", "total": "33", "points": "260", "flag": "17", "name": "Network"}, {"color": "#a441ff", "total": "23", "points": "260", "flag": "15", "name": "Steganography"}, {"color": "#ff84f0", "total": "42", "points": "395", "flag": "16", "name": "Web-Client"}, {"color": "#35a2ff", "total": "96", "points": "490", "flag": "27", "name": "Web-Server"}]}, {"username": "ModZoL", "username_r": "ModZoL", "realn": "ModZoL", "avatar": "https://www.root-me.org/IMG/logo/auton0.png?1637503221", "rank": "11917", "points": "1120", "challenges": "71", "status": "trainee", "details": [{"color": "#dbff6b", "total": "33", "points": "30", "flag": "3", "name": "App-Script"}, {"color": "#6166ff", "total": "93", "points": "0", "flag": "0", "name": "App-System"}, {"color": "#ff4141", "total": "66", "points": "15", "flag": "2", "name": "Cracking"}, {"color": "#b06cfb", "total": "69", "points": "140", "flag": "14", "name": "Cryptanalysis"}, {"color": "#35de59", "total": "42", "points": "5", "flag": "1", "name": "Forensic"}, {"color": "#6db8e4", "total": "29", "points": "180", "flag": "9", "name": "Progamming"}, {"color": "#ff5887", "total": "59", "points": "0", "flag": "0", "name": "Realist"}, {"color": "#e1e0ff", "total": "33", "points": "65", "flag": "6", "name": "Network"}, {"color": "#a441ff", "total": "23", "points": "160", "flag": "11", "name": "Steganography"}, {"color": "#ff84f0", "total": "42", "points": "395", "flag": "16", "name": "Web-Client"}, {"color": "#35a2ff", "total": "96", "points": "130", "flag": "9", "name": "Web-Server"}]}, {"username": "Rovu", "username_r": "Rovu", "realn": "Rovu", "avatar": "https://www.root-me.org/IMG/logo/auton0.png?1637503221", "rank": "3673", "points": "2630", "challenges": "138", "status": "insider", "details": [{"color": "#dbff6b", "total": "33", "points": "400", "flag": "19", "name": "App-Script"}, {"color": "#6166ff", "total": "93", "points": "0", "flag": "0", "name": "App-System"}, {"color": "#ff4141", "total": "66", "points": "195", "flag": "12", "name": "Cracking"}, {"color": "#b06cfb", "total": "69", "points": "305", "flag": "22", "name": "Cryptanalysis"}, {"color": "#35de59", "total": "42", "points": "300", "flag": "11", "name": "Forensic"}, {"color": "#6db8e4", "total": "29", "points": "40", "flag": "2", "name": "Progamming"}, {"color": "#ff5887", "total": "59", "points": "0", "flag": "0", "name": "Realist"}, {"color": "#e1e0ff", "total": "33", "points": "215", "flag": "14", "name": "Network"}, {"color": "#a441ff", "total": "23", "points": "295", "flag": "16", "name": "Steganography"}, {"color": "#ff84f0", "total": "42", "points": "380", "flag": "15", "name": "Web-Client"}, {"color": "#35a2ff", "total": "96", "points": "500", "flag": "27", "name": "Web-Server"}]}], "total_challenge": 512, "total_points": 21170}
+{
+  "users": [
+    {
+      "username": "nin7o-863599",
+      "username_r": "nin7o",
+      "realn": "nin7o",
+      "avatar": "https://www.root-me.org/IMG/logo/auton863599.jpg?1725275720",
+      "rank": "3664",
+      "points": "2635",
+      "challenges": "144",
+      "status": "insider",
+      "details": [
+        {
+          "color": "#dbff6b",
+          "total": "33",
+          "points": "360",
+          "flag": "18",
+          "name": "App-Script"
+        },
+        {
+          "color": "#6166ff",
+          "total": "93",
+          "points": "5",
+          "flag": "1",
+          "name": "App-System"
+        },
+        {
+          "color": "#ff4141",
+          "total": "66",
+          "points": "80",
+          "flag": "7",
+          "name": "Cracking"
+        },
+        {
+          "color": "#b06cfb",
+          "total": "69",
+          "points": "290",
+          "flag": "22",
+          "name": "Cryptanalysis"
+        },
+        {
+          "color": "#35de59",
+          "total": "42",
+          "points": "305",
+          "flag": "11",
+          "name": "Forensic"
+        },
+        {
+          "color": "#6db8e4",
+          "total": "29",
+          "points": "190",
+          "flag": "10",
+          "name": "Progamming"
+        },
+        {
+          "color": "#ff5887",
+          "total": "59",
+          "points": "0",
+          "flag": "0",
+          "name": "Realist"
+        },
+        {
+          "color": "#e1e0ff",
+          "total": "33",
+          "points": "260",
+          "flag": "17",
+          "name": "Network"
+        },
+        {
+          "color": "#a441ff",
+          "total": "23",
+          "points": "260",
+          "flag": "15",
+          "name": "Steganography"
+        },
+        {
+          "color": "#ff84f0",
+          "total": "42",
+          "points": "395",
+          "flag": "16",
+          "name": "Web-Client"
+        },
+        {
+          "color": "#35a2ff",
+          "total": "96",
+          "points": "490",
+          "flag": "27",
+          "name": "Web-Server"
+        }
+      ]
+    },
+    {
+      "username": "ModZoL",
+      "username_r": "ModZoL",
+      "realn": "ModZoL",
+      "avatar": "https://www.root-me.org/IMG/logo/auton0.png?1637503221",
+      "rank": "11917",
+      "points": "1120",
+      "challenges": "71",
+      "status": "trainee",
+      "details": [
+        {
+          "color": "#dbff6b",
+          "total": "33",
+          "points": "30",
+          "flag": "3",
+          "name": "App-Script"
+        },
+        {
+          "color": "#6166ff",
+          "total": "93",
+          "points": "0",
+          "flag": "0",
+          "name": "App-System"
+        },
+        {
+          "color": "#ff4141",
+          "total": "66",
+          "points": "15",
+          "flag": "2",
+          "name": "Cracking"
+        },
+        {
+          "color": "#b06cfb",
+          "total": "69",
+          "points": "140",
+          "flag": "14",
+          "name": "Cryptanalysis"
+        },
+        {
+          "color": "#35de59",
+          "total": "42",
+          "points": "5",
+          "flag": "1",
+          "name": "Forensic"
+        },
+        {
+          "color": "#6db8e4",
+          "total": "29",
+          "points": "180",
+          "flag": "9",
+          "name": "Progamming"
+        },
+        {
+          "color": "#ff5887",
+          "total": "59",
+          "points": "0",
+          "flag": "0",
+          "name": "Realist"
+        },
+        {
+          "color": "#e1e0ff",
+          "total": "33",
+          "points": "65",
+          "flag": "6",
+          "name": "Network"
+        },
+        {
+          "color": "#a441ff",
+          "total": "23",
+          "points": "160",
+          "flag": "11",
+          "name": "Steganography"
+        },
+        {
+          "color": "#ff84f0",
+          "total": "42",
+          "points": "395",
+          "flag": "16",
+          "name": "Web-Client"
+        },
+        {
+          "color": "#35a2ff",
+          "total": "96",
+          "points": "130",
+          "flag": "9",
+          "name": "Web-Server"
+        }
+      ]
+    },
+    {
+      "username": "Rovu",
+      "username_r": "Rovu",
+      "realn": "Rovu",
+      "avatar": "https://www.root-me.org/IMG/logo/auton0.png?1637503221",
+      "rank": "3673",
+      "points": "2630",
+      "challenges": "138",
+      "status": "insider",
+      "details": [
+        {
+          "color": "#dbff6b",
+          "total": "33",
+          "points": "400",
+          "flag": "19",
+          "name": "App-Script"
+        },
+        {
+          "color": "#6166ff",
+          "total": "93",
+          "points": "0",
+          "flag": "0",
+          "name": "App-System"
+        },
+        {
+          "color": "#ff4141",
+          "total": "66",
+          "points": "195",
+          "flag": "12",
+          "name": "Cracking"
+        },
+        {
+          "color": "#b06cfb",
+          "total": "69",
+          "points": "305",
+          "flag": "22",
+          "name": "Cryptanalysis"
+        },
+        {
+          "color": "#35de59",
+          "total": "42",
+          "points": "300",
+          "flag": "11",
+          "name": "Forensic"
+        },
+        {
+          "color": "#6db8e4",
+          "total": "29",
+          "points": "40",
+          "flag": "2",
+          "name": "Progamming"
+        },
+        {
+          "color": "#ff5887",
+          "total": "59",
+          "points": "0",
+          "flag": "0",
+          "name": "Realist"
+        },
+        {
+          "color": "#e1e0ff",
+          "total": "33",
+          "points": "215",
+          "flag": "14",
+          "name": "Network"
+        },
+        {
+          "color": "#a441ff",
+          "total": "23",
+          "points": "295",
+          "flag": "16",
+          "name": "Steganography"
+        },
+        {
+          "color": "#ff84f0",
+          "total": "42",
+          "points": "380",
+          "flag": "15",
+          "name": "Web-Client"
+        },
+        {
+          "color": "#35a2ff",
+          "total": "96",
+          "points": "500",
+          "flag": "27",
+          "name": "Web-Server"
+        }
+      ]
+    }
+  ],
+  "total_challenge": 585,
+  "total_points": 24125
+}
