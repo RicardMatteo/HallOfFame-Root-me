@@ -26,9 +26,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4 # Checkout the repository content to the GitHub runner
-
-      - name: cd into updater
-        run: cd ./updater/
         
       - name: setup python
         uses: actions/setup-python@v4
@@ -41,7 +38,7 @@ jobs:
           pip install -r requirements.txt
         
       - name: execute python script
-        run: python3 .update.py
+        run: python3 ./updater/update.py
       
       - name: commit files
         run: |
