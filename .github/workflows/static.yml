@@ -36,7 +36,7 @@ jobs:
           python-version: '3.9'
  
       - name: execute python script
-        run: python3 /updater/update.py
+        run: python3 updater/update.py
       
       - name: commit files
         run: |
