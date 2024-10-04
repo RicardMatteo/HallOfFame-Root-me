@@ -5,7 +5,7 @@ import re
 import requests
 import sys
 
-with open('./site/users.json', 'r') as data_file:
+with open('../site/users.json', 'r') as data_file:
 	data = json.load(data_file)
 
 def wrong_arg():
@@ -76,7 +76,7 @@ def update_users(user):
 	for detail in user['details']:
 		print('\t',detail['name'], detail['points'], detail['flag'], detail['total'])
 
-	with open('./site/users.json', 'w') as data_file:
+	with open('../site/users.json', 'w') as data_file:
 		json.dump(data, data_file, indent=2)
 
 	print("[+] End update profil")
@@ -110,7 +110,7 @@ def add_user(username, realn):
 		print("[+] Starting to add user", username)
 
 		data['users'].append({"username": username, "username_r": "", "realn": realn, "avatar": "https://www.root-me.org/local/cache-vignettes/L48xH48/auton0-5220c.png", "rank": 0, "points": 0, "challenges": 0, "status": "newbie", "details": [{"color": "#dbff6b", "total": "0", "points": "0", "flag": "0", "name": "App-Script"}, {"color": "#6166ff", "total": "0", "points": "0", "flag": "0", "name": "App-System"}, {"color": "#ff4141", "total": "0", "points": "0", "flag": "0", "name": "Cracking"}, {"color": "#b06cfb", "total": "0", "points": "0", "flag": "0", "name": "Cryptanalysis"}, {"color": "#35de59", "total": "0", "points": "0", "flag": "0", "name": "Forensic"}, {"color": "#6db8e4", "total": "0", "points": "0", "flag": "0", "name": "Progamming"}, {"color": "#ff5887", "total": "0", "points": "0", "flag": "0", "name": "Realist"}, {"color": "#e1e0ff", "total": "0", "points": "0", "flag": "0", "name": "Network"}, {"color": "#a441ff", "total": "0", "points": "0", "flag": "0", "name": "Steganography"}, {"color": "#ff84f0", "total": "0", "points": "0", "flag": "0", "name": "Web-Client"}, {"color": "#35a2ff", "total": "0", "points": "0", "flag": "0", "name": "Web-Server"}]})
-		with open('./site/users.json', 'w') as data_file:
+		with open('../site/users.json', 'w') as data_file:
 			json.dump(data, data_file)
 
 		print("[+] End of add")
@@ -124,7 +124,7 @@ def delete_user(username):
 	for i in range(len(data['users'])):
 		if data['users'][i]['username'] == username:
 			data['users'].pop(i)
-			with open('./site/users.json', 'w') as data_file:
+			with open('../site/users.json', 'w') as data_file:
 				json.dump(data, data_file)
 			print("[+] Profil deleted...") 
 			return
