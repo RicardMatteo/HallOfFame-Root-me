@@ -2,8 +2,8 @@ name: Deploy static content to Pages
 
 on:
   schedule:
-    - cron: '0 */2 * * *' # every 2 hours
-
+    - cron: '0 0 * * *'  # every day at midnight
+    
   workflow_dispatch: # Allows you to run this workflow manually from the Actions tab
 
 permissions:
