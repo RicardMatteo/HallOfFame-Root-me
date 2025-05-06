@@ -38,7 +38,7 @@ jobs:
       
       # Upload the modified site as an artifact (named 'github-pages')
       - name: Upload modified site artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           name: github-pages
           path: './site/'
