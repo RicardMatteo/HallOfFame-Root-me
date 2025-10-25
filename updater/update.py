@@ -5,6 +5,13 @@ import re
 import requests
 import sys
 
+custom_user_agent = "curl/8.12.1"
+
+# Create a headers dictionary
+headers = {
+    "User-Agent": custom_user_agent
+}
+
 with open('../site/users.json', 'r') as data_file:
 	data = json.load(data_file)
 
@@ -15,11 +22,11 @@ def wrong_arg():
 
 def update_users(user):
 	print("[+] Starting update profil")
-	r = requests.get('https://www.root-me.org/'+ user['username'] + '?inc=score')
+	r = requests.get('https://www.root-me.org/'+ user['username'] + '?inc=score', headers=headers)
 	while r.status_code != 200:
 		print("[-] Too many requests... Sleeping 1 second...")
 		time.sleep(1) # Add delay to bypass root-me requests limitations
-		r = requests.get('https://www.root-me.org/'+ user['username'] + '?inc=score')
+		r = requests.get('https://www.root-me.org/'+ user['username'] + '?inc=score', headers=headers)
 
 	user['username'] = html.escape(user['username'])
 
@@ -43,7 +50,7 @@ def update_users(user):
 		user['points'] = "{group}".format(group = matches.group(1))
 
 	# Status -> récupéré depuis la page de profil
-	r2 = requests.get('https://www.root-me.org/'+ user['username'])
+	r2 = requests.get('https://www.root-me.org/'+ user['username'], headers=headers)
 	regex = re.escape(user['username_r']) + r'<\/a><\/td>[\n]<td .*\/td>[\n]<td class=".*"><img src=\'.*\' .* title=\'([a-z]*)\''
 	matches = re.search(regex, r2.text)
 	if matches:
@@ -85,13 +92,13 @@ def update():
 	print("[+] Starting Update generic information")
 
 	# get generic data 
-	r = requests.get('https://www.root-me.org/macz?inc=score')
+	r = requests.get('https://www.root-me.org/macz?inc=score', headers=headers)
 	regex = r'<span.*?>[\n]<b>([0-9]*)<\/b>&nbsp;Points'
 	matches = re.findall(regex, r.text, re.MULTILINE)
 	if matches:
 		data['total_points'] = sum([int(i) for i in matches])
 
-	r = requests.get('https://www.root-me.org/Capitaine-John?inc=score')
+	r = requests.get('https://www.root-me.org/Capitaine-John?inc=score', headers=headers)
 	regex = r'Points<br\/>[\n]<b>[0-9]*<\/b>&nbsp;\/&nbsp;([0-9]*)'
 	matches = re.findall(regex, r.text, re.MULTILINE)
 	if matches:
@@ -105,7 +112,7 @@ def update():
 
 def add_user(username, realn):
 	print("[+] Starting update profil")
-	r = requests.get('https://www.root-me.org/'+ username + '?inc=score')
+	r = requests.get('https://www.root-me.org/'+ username + '?inc=score', headers=headers)
 	if r.status_code == 200:
 		print("[+] Starting to add user", username)
 
@@ -133,14 +140,14 @@ def delete_user(username):
 def top_100():
 	print("[+]Get top 100 profile")
 	# get generic data 
-	r = requests.get('https://www.root-me.org/fr/Communaute/Classement/')
+	r = requests.get('https://www.root-me.org/fr/Communaute/Classement/', headers=headers)
 	regex = r'<a href="(.*?)\?.*?>[0-9]+</a>'
 	matches = re.findall(regex, r.text)
 	for username in matches:
 		add_user(username, 'John McClane')
 
 	# get generic data 
-	r = requests.get('https://www.root-me.org/fr/Communaute/Classement/?debut_classement=50')
+	r = requests.get('https://www.root-me.org/fr/Communaute/Classement/?debut_classement=50', headers=headers)
 	regex = r'<a href="(.*?)\?.*?>[0-9]+</a>'
 	matches = re.findall(regex, r.text)
 	for username in matches:
